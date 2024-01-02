@@ -1,4 +1,4 @@
-package com.jetbrains.simplelogin.androidapp.data
+package com.thomsonreuters.cs.onvio.shared.data
 
 import android.util.Patterns
 

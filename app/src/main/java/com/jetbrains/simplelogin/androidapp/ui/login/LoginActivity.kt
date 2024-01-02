@@ -8,6 +8,7 @@ import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.widget.EditText
@@ -15,6 +16,7 @@ import android.widget.Toast
 import com.jetbrains.simplelogin.androidapp.databinding.ActivityLoginBinding
 
 import com.jetbrains.simplelogin.androidapp.R
+import com.thomsonreuters.cs.onvio.shared.Greeting
 
 class LoginActivity : AppCompatActivity() {
 
@@ -57,12 +59,13 @@ class LoginActivity : AppCompatActivity() {
                 showLoginFailed(loginResult.error)
             }
             if (loginResult.success != null) {
-                updateUiWithUser(loginResult.success)
+//                updateUiWithUser(loginResult.success)
+                Toast.makeText(this, "You have successfully logged in from: " + (Greeting().greet()), Toast.LENGTH_LONG).show()
             }
             setResult(Activity.RESULT_OK)
 
             //Complete and destroy login activity once successful
-            finish()
+//            finish()
         })
 
         username.afterTextChanged {

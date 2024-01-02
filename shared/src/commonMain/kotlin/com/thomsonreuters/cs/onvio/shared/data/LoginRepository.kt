@@ -1,6 +1,6 @@
-package com.jetbrains.simplelogin.androidapp.data
+package com.thomsonreuters.cs.onvio.shared.data
 
-import com.jetbrains.simplelogin.androidapp.data.model.LoggedInUser
+import com.thomsonreuters.cs.onvio.shared.data.model.LoggedInUser
 
 /**
  * Class that requests authentication and user information from the remote data source and
